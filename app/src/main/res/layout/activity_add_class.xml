@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddClass"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/etClassID"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:hint="Mã lớp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/etClassName"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/etClassID"
+            android:hint="Tên lớp">
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSaveClass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="210dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Thêm lớp">
+    </Button>
+
+</RelativeLayout>

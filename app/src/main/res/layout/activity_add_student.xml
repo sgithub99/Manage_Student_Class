@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudent"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/etStudentID"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:hint="Mã sinh viên">
+    </EditText>
+
+    <EditText
+        android:id="@+id/etStudentName"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/etStudentID"
+        android:hint="Tên sinh viên">
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/etStudentBorn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/etStudentName"
+        android:hint="Năm sinh">
+    </EditText>
+
+    <EditText
+        android:id="@+id/etStudentCity"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/etStudentBorn"
+        android:hint="Quê quán">
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etStudentCity"
+        android:text="Chọn kỳ học"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerStudentYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/tvStudent"
+        android:background="@android:drawable/btn_dropdown"
+        />
+
+    <Button
+        android:id="@+id/btnSaveStudent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_below="@+id/spinnerStudentYear"
+        android:backgroundTint="#4CAF50"
+        android:text="Thêm sinh viên">
+    </Button>
+
+</RelativeLayout>
